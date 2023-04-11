@@ -11,12 +11,8 @@
 
 def sum(a, b):
     if b == 0:
-        return 0
-    sum = 0
-    if b > 0:
-        sum = sum(a, 1)
-        b -= 1
-    return sum
+        return 1
+    return a + sum((a-a+1),b-1)
 
 
 A = int(input("Введите число A:  "))
